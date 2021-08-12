@@ -24,6 +24,15 @@ body {
   font-family: 500;
   letter-spacing: .05rem;
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fafafa;
   -webkit-box-shadow: #f9572f 0px 1px 6px;
           box-shadow: #f9572f 0px 1px 6px;
@@ -32,10 +41,9 @@ body {
 }
 
 .button:hover, .smallButton:hover {
-  color: #c2d0f7;
-  -webkit-box-shadow: #0a56fa 0px 1px 6px;
-          box-shadow: #0a56fa 0px 1px 6px;
-  background-color: #242D52;
+  color: #d9e3fc;
+  -webkit-box-shadow: rgba(98, 146, 248, 0.671) 0px 1px 6px;
+          box-shadow: rgba(98, 146, 248, 0.671) 0px 1px 6px;
 }
 
 .smallButton {
@@ -231,6 +239,74 @@ body {
   }
   .header > div:nth-child(4) {
     display: none;
+  }
+}
+
+.sectionOne {
+  margin: 0px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionOneLeft {
+  margin: 0px auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 4%;
+}
+
+.sectionOneLeft > p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 800;
+  color: #242d52;
+  padding: 5% 15% 5% 15%;
+}
+
+.sectionOneLeft > p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 15% 5% 15%;
+}
+
+.sectionOneLeft > button:nth-child(3) {
+  margin: 2% 15% 5% 15%;
+}
+
+.sectionOneRight {
+  margin: 0px auto;
+  width: 50%;
+}
+
+.sectionOneRight > img {
+  width: 90%;
+}
+
+@media (max-width: 960px) {
+  .sectionOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionOneLeft {
+    width: 90%;
+    padding: 0%;
+  }
+  .sectionOneRight {
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -40,15 +40,18 @@ body{
     font-family: 500;
     letter-spacing: .05rem;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $VeryLightGray;
     box-shadow: hsl(12, 94%, 58%) 0px 1px 6px;
     transition: .3s all ease-in-out;
     
 }
 .button:hover{
-    color: rgb(194, 208, 247);
-    box-shadow: hsl(221, 96%, 51%) 0px 1px 6px;
-    background-color: #242D52;
+    color: rgb(217, 227, 252);
+    box-shadow: hsla(221, 92%, 68%, 0.671) 0px 1px 6px;
+    // background-color: #242D52;
 }
 
 .smallButton{
