@@ -1,0 +1,76 @@
+// ! Colors
+
+// ** Primary Color
+
+$BrightRed:hsl(12, 88%, 59%);
+$DarkBlue: hsl(228, 39%, 23%);
+
+// ** Neutral Color
+
+$DarkGrayishBlue: hsl(227, 12%, 61%);
+$VeryDarkBlue: hsl(233, 12%, 13%);
+$VeryPaleRed: hsl(13, 100%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+// ! Font Size
+
+$BodyFontSize:16px;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    padding: 10px;
+    min-width: 375px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-smooth: antaliased;
+}
+
+.button{
+    height: 46px;
+    width: 135px;
+    background-color: $BrightRed;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: 500;
+    letter-spacing: .05rem;
+    font-size: 14px;
+    color: $VeryLightGray;
+    box-shadow: hsl(12, 94%, 58%) 0px 1px 6px;
+    transition: .3s all ease-in-out;
+    
+}
+.button:hover{
+    color: rgb(194, 208, 247);
+    box-shadow: hsl(221, 96%, 51%) 0px 1px 6px;
+    background-color: #242D52;
+}
+
+.smallButton{
+    @extend .button;
+    height: 39px;
+    width: 67px;
+}
+.smallButton:hover{
+    color: rgb(194, 208, 247);
+    box-shadow: hsl(221, 96%, 51%) 0px 1px 6px;
+    background-color: #242D52;
+    
+}
+@mixin textContent($fontSize,$fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight
+}
+
+
+@import './header';
+@import './sectionOne';
+@import './sectiontwo';
+@import './sectionThree';
+@import './sectionFour';
+@import './sectionFive';
+@import './footer'

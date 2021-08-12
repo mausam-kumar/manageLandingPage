@@ -1,0 +1,27 @@
+.header{
+    margin: 50px auto;
+    width: 100%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & > div:nth-child(1){
+        
+    }
+    & > div:nth-child(2){
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        width: 45%;
+        border: 1px solid teal;
+        & > li{
+            margin-left: 6%;
+            font-size: 14px;
+        }
+    }
+    & > div:nth-child(3){
+
+    }
+}
