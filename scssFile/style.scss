@@ -22,7 +22,7 @@ $BodyFontSize:16px;
     box-sizing: border-box;
 }
 body{
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     min-width: 375px;
     font-family: 'Be Vietnam', sans-serif;
@@ -49,9 +49,9 @@ body{
     
 }
 .button:hover{
-    color: rgb(217, 227, 252);
+    color: rgb(254, 254, 255);
     box-shadow: hsla(221, 92%, 68%, 0.671) 0px 1px 6px;
-    // background-color: #242D52;
+    background-color: $DarkBlue;
 }
 
 .smallButton{

@@ -16,5 +16,14 @@ function defaultFunc() {
     crossButton.style.display = 'none' 
     var lineButton = document.querySelector('#hamburgerButton')
     lineButton.style.display = 'block'
-    location.reload();
+    
+    // if (screen.width<960) {
+        
+    //     lineButton.style.display = 'block'
+    // }else{
+        
+    //     lineButton.style.display = 'none'
+    // }
+    // console.log(screen.width);
+    location.reload()
 }

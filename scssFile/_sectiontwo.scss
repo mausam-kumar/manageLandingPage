@@ -1,0 +1,85 @@
+.sectionTwo{
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    
+}
+.twoLeft{
+    width: 100%;
+    // border: 1px solid blue;
+    &>p:nth-child(1){
+        padding: 0% 0% 0% 5%;
+        margin: 0px auto;
+        width: 80%;
+        color: $VeryDarkBlue;
+        font-size: 240%;
+        line-height: 50px;
+        font-weight: 800;
+    }
+    &>p:nth-child(2){
+        margin-top: 20px;
+        padding: 0% 20% 0% 20%;
+        color: $DarkGrayishBlue;
+    }
+}
+.twoRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0% 12% 0% 12%;
+    // border: 1px solid black;
+}
+.twoRightContent{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2%;
+    & >div:nth-child(1){
+        border-radius: 50px;
+        // border: 1px solid black;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4% 6%;
+        height: 15%;
+        color: white;
+        font-weight: 600;
+        background-color: $BrightRed;
+    }
+    &>div:nth-child(2){
+        padding: 2% 5%;
+        // border: 1px solid red;
+
+    }
+    &>div:nth-child(2) > p:nth-child(1){
+        color: $VeryDarkBlue;
+        font-size: 110%;
+        line-height: 25px;
+        font-weight: 800;
+    }
+    &>div:nth-child(2) > p:nth-child(2){
+        margin-top: 30px;
+        font-size: 80%;
+        color: $DarkGrayishBlue;
+    }
+}
+@media (max-width:960px) {
+    .sectionTwo{
+        flex-direction: column;
+    }
+    .twoLeft{
+
+        width: 100%;
+    }
+    .twoRight{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .twoRightContent{
+        & >div:nth-child(1){
+            padding: 1% 4%;
+        }
+    }
+}
