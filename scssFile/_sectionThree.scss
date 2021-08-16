@@ -1,0 +1,63 @@
+
+.sectionThree{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.threeFirst{
+    font-size: 40px;
+    color: $VeryDarkBlue;
+    font-weight: 800;
+}
+.threeSecond{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    // border: 1px solid red;
+}
+.carouselDiv{
+    display: flex;
+    text-align: center;
+    width: 26%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 1%;
+    // border: 1px solid black;
+
+    &> img{
+        width: 45%;
+    }
+    & > p:nth-child(2){
+        margin-top: 10px;
+        font-weight: 800;
+    }
+    & > p:nth-child(3){
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+.threeThird{
+    margin-top: 25px;
+}
+@media (max-width:960px) {
+    .threeSecond{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .carouselDiv{
+        margin-top: 25px;
+        width: 65%;
+        padding: 4% 0%;
+
+        & > img{
+            width: 25%;
+        }
+    }
+}

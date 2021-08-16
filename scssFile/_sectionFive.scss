@@ -1,0 +1,76 @@
+.sectionFifth{
+    display: grid;
+    background-color: $VeryDarkBlue;
+    color: white;
+    grid-template-columns: repeat(12,1fr);
+}
+.sectionFifth > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 0%;
+    align-items: center;
+    // border: 1px solid red;
+}
+.firstForth{
+    grid-column: 1/4;
+
+    
+    & > div:nth-child(2){
+        margin-top: 25px;
+
+        & > img{
+            cursor: pointer;
+        }
+    }
+}
+.secondForth{
+    grid-column: 4/6;
+    line-height: 40px;
+    font-size: 18px;
+}
+.thirdForth{
+    grid-column: 6/8;
+    line-height: 40px;
+    font-size: 18px;
+}
+.forthForth{
+    grid-column: 8/-1;
+
+    & > div{
+        display: flex;
+        justify-content: space-around;
+        // border: 1px solid yellow;
+        width: 90%;
+
+        & > input{
+            width: 60%;
+            padding: 3%;
+            background-color: white;
+
+        }
+        & > button{
+            width: 20%;
+        }
+    }
+
+    & > p{
+        margin-top: 20px;
+    }
+}
+.inputField{
+    border-radius: 10px;
+    cursor: pointer;
+    color: $VeryDarkBlue;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width:720px) {
+    .sectionFifth{
+        display: flex;
+        flex-direction: column;
+
+    }
+}

@@ -88,6 +88,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -159,7 +160,7 @@ body {
   -webkit-box-shadow: rgba(70, 68, 68, 0.747) 0px 2px 8px 0px;
           box-shadow: rgba(70, 68, 68, 0.747) 0px 2px 8px 0px;
   height: 250px;
-  width: 350px;
+  width: 90%;
   -webkit-transition: .4s all ease-in-out;
   transition: .4s all ease-in-out;
   cursor: pointer;
@@ -419,6 +420,268 @@ body {
   }
   .twoRightContent > div:nth-child(1) {
     padding: 1% 4%;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
+
+.sectionThree {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.threeFirst {
+  font-size: 40px;
+  color: #1d1e25;
+  font-weight: 800;
+}
+
+.threeSecond {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.carouselDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 26%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.carouselDiv > img {
+  width: 45%;
+}
+
+.carouselDiv > p:nth-child(2) {
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.carouselDiv > p:nth-child(3) {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.threeThird {
+  margin-top: 25px;
+}
+
+@media (max-width: 960px) {
+  .threeSecond {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carouselDiv {
+    margin-top: 25px;
+    width: 65%;
+    padding: 4% 0%;
+  }
+  .carouselDiv > img {
+    width: 25%;
+  }
+}
+
+.sectionForth {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5% 12%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f25f3a;
+  color: white;
+  opacity: 11;
+}
+
+.sectionForth ::after {
+  background-image: url(../images/bg-simplify-section-desktop.svg);
+}
+
+.sectionForth > div:nth-child(2) {
+  background-color: white;
+  color: #1d1e25;
+  font-weight: 500;
+}
+
+.sectionForth > div:nth-child(1) {
+  width: 50%;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 0% 10% 0% 0%;
+}
+
+@media (max-width: 960px) {
+  .sectionForth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 5%;
+  }
+  .sectionForth > div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+  .sectionForth > div:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+.sectionFifth {
+  display: -ms-grid;
+  display: grid;
+  background-color: #1d1e25;
+  color: white;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.sectionFifth > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstForth {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.firstForth > div:nth-child(2) {
+  margin-top: 25px;
+}
+
+.firstForth > div:nth-child(2) > img {
+  cursor: pointer;
+}
+
+.secondForth {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.thirdForth {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6/8;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.forthForth {
+  grid-column: 8/-1;
+}
+
+.forthForth > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+.forthForth > div > input {
+  width: 60%;
+  padding: 3%;
+  background-color: white;
+}
+
+.forthForth > div > button {
+  width: 20%;
+}
+
+.forthForth > p {
+  margin-top: 20px;
+}
+
+.inputField {
+  border-radius: 10px;
+  cursor: pointer;
+  color: #1d1e25;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 720px) {
+  .sectionFifth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
